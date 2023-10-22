@@ -59,6 +59,10 @@ p a {
   color: darkblue;
 }
 
+span a {
+  color: darkblue;
+}
+
 .skip a{
   background: white;
   left: 0;
