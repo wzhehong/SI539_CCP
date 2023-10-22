@@ -55,7 +55,9 @@ h2{
    text-align: center;
 }
 
-
+p a {
+  color: darkblue;
+}
 
 .skip a{
   background: white;
