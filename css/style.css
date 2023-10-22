@@ -54,6 +54,7 @@ nav a{
   z-index: 1;
 }
 
+
 nav{
   background-color: #ddd;
   padding: 25px 0; 
@@ -71,4 +72,226 @@ footer{
   text-decoration-line: underline;
   text-decoration-style: wavy;
   text-underline-offset: 5px;
+}
+
+.skip {
+  position: absolute;
+  top: -40px;
+}
+
+.skip:focus {
+  position: absolute;
+  top: 20px;
+}
+
+:focus {
+  border-style: solid;
+  border-width: 2px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 3fr 3fr 1fr;
+  gap: 15px;
+  
+  margin-top: 30px;
+}
+
+.pet-title {
+  grid-column: 2 / span 2;
+  grid-row: 1;
+  text-align: center;
+}
+
+.pet-text {
+  grid-column: 2 / span 2;
+  grid-row: 2;
+}
+
+.gallery-title {
+  grid-column: 2 / span 2;
+  grid-row: 3;
+  text-align: center;
+}
+.gallery-item1 {
+  grid-column: 2;
+  grid-row: 4;
+  text-align: center;
+}
+.gallery-item2 {
+  grid-column: 3;
+  grid-row: 4;
+  text-align: center;
+}
+.gallery-item3 {
+  grid-column: 2;
+  grid-row: 5;
+  text-align: center;
+}
+.gallery-item4 {
+  grid-column: 3;
+  grid-row: 5;
+  text-align: center;
+}
+
+.likes {
+  grid-column: 2 / span 2;
+  grid-row: 6;
+}
+
+.travel-title {
+  grid-column: 2 / span 2;
+  grid-row: 1;
+  text-align: center;
+}
+.travel-title-photo1 {
+  grid-column: 2 / span 2;
+  grid-row: 2;
+  text-align: center;
+}
+.travel-title-photo2 {
+  grid-column: 2 / span 2;
+  grid-row: 3;
+  text-align: center;
+}
+.travel-text {
+  grid-column: 2 / span 2;
+  grid-row: 4;
+}
+.travel-gallery-title {
+  grid-column: 2 / span 2;
+  grid-row: 5;
+}
+.travel-gallery-item1 {
+  grid-column: 2;
+  grid-row: 6;
+}
+.travel-gallery-item2 {
+  grid-column: 3;
+  grid-row: 6;
+}
+.travel-gallery-item3 {
+  grid-column: 2;
+  grid-row: 7;
+}
+.travel-gallery-item4 {
+  grid-column: 3;
+  grid-row: 7;
+}
+.travel-gallery-item5 {
+  grid-column: 2;
+  grid-row: 8;
+}
+
+
+@media screen and (min-width: 800px) {
+
+  nav {
+    text-align: right;
+    padding: 30px 0;
+  }
+ 
+
+  .container {
+    grid-template-columns: 100px 200px 200px auto 200px 200px 100px;
+    margin: 100px;
+    padding-bottom: 100px;
+    border-bottom-style: solid;
+    border-bottom-width: 5px;
+  }
+
+  .pet-title {
+    grid-column: 4 / span 3;
+    grid-row: 1 / 3;
+  }
+
+  .pet-text {
+    grid-column: 4 / span 3;
+    grid-row: 3;
+  }
+
+  .gallery-title {
+    grid-column: 2 / span 2;
+    grid-row: 1;
+    text-align: center;
+  }
+  .gallery-item1 {
+    grid-column: 2;
+    grid-row: 2;
+    text-align: center;
+  }
+  .gallery-item2 {
+    grid-column: 3;
+    grid-row: 2;
+    text-align: center;
+  }
+  .gallery-item3 {
+    grid-column: 2;
+    grid-row: 3;
+    text-align: center;
+  }
+  .gallery-item4 {
+    grid-column: 3;
+    grid-row: 3;
+    text-align: center;
+  }
+
+  .likes {
+    grid-column: 4 / span 3;
+    grid-row: 4;
+  }
+
+  .travel {
+    grid-template-columns: 100px 400px auto auto 200px 200px 100px;
+    margin: 100px;
+    padding-bottom: 100px;
+    border-bottom-style: solid;
+    border-bottom-width: 5px;
+  }
+
+  .travel-title {
+    grid-column: 2;
+    grid-row: 1;
+    text-align: center;
+  }
+  .travel-title-photo1 {
+    grid-column: 2;
+    grid-row: 2 / 4;
+    text-align: center;
+  }
+  .travel-title-photo2 {
+    grid-column: 2;
+    grid-row: 4 / 6;
+    text-align: center;
+  }
+  .travel-text {
+    grid-column: 3 / 5;
+    grid-row: 2;
+  }
+  .travel-gallery-title {
+    grid-column: 3 / span 2;
+    grid-row: 3;
+  }
+  .travel-gallery-item1 {
+    grid-column: 3;
+    grid-row: 4;
+  }
+  .travel-gallery-item2 {
+    grid-column: 4;
+    grid-row: 4;
+  }
+  .travel-gallery-item3 {
+    grid-column: 3;
+    grid-row: 5;
+  }
+  .travel-gallery-item4 {
+    grid-column: 4;
+    grid-row: 5;
+  }
+  .travel-gallery-item5 {
+    grid-column: 3;
+    grid-row: 6;
+  }
+
+
 }
