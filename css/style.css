@@ -97,7 +97,7 @@ footer{
   top: -40px;
 }
 
-.skip:focus {
+.skip a:focus {
   position: absolute;
   top: 20px;
 }
